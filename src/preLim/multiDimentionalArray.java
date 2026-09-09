@@ -17,6 +17,7 @@ public class multiDimentionalArray {
                 System.out.print(num[i][j] + " ");
                 
             }
+            
             System.out.println();
         }
     }
