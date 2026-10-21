@@ -1,0 +1,48 @@
+package midTerm;
+
+public class binarySearch {
+
+    public static int search(int[] arr, int target) {
+
+        int left = 0;
+        int right = arr.length - 1;
+        while (left <= right) {
+
+            int mid = (left + right) / 2;
+
+            if (arr[mid] == target) {
+                return mid;
+
+            } else if (arr[mid] < target) {
+
+                left = mid + 1;
+
+            } else {
+
+                right = mid - 1;
+            }
+
+        }
+
+        return -1; // Not Found
+
+    }
+
+    public static void main(String[] args) {
+
+        int arr[] = {1, 2, 3, 4, 5};
+
+        int result = search(arr, 4);
+
+        if (result >= 0) {
+
+            System.out.println("Found at index: " + result + " = " + arr[result]);
+
+        } else {
+
+            System.out.println("Element not found");
+        }
+
+    }
+
+}

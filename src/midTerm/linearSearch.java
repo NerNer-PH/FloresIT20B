@@ -22,19 +22,17 @@ public class linearSearch {
     public static void main(String[] args) {
 
         int arr[] = {1, 2, 3, 4, 5};
-        
+
         int result = search(arr, 4);
 
         if (result >= 0) {
-            
+
             System.out.println("Found at index: " + result + " = " + arr[result]);
-            
-            
+
         } else {
-            
+
             System.out.println("Element not found");
         }
-        
 
     }
 
